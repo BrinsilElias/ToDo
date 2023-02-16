@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --clr-primary-600: #5048e5;
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(210, 20%, 98%);
+    
+
+    --clr-border: hsla(0, 0%, 83%, 0.6);
+    --clr-link: hsl(217, 91%, 60%);
+
+    --clr-text-dark: hsl(0, 0%, 15%);
+    --clr-text-light: hsl(240, 5%, 65%);
+
+    --clr-invalid: hsl(0, 72%, 51%);
+
+    --fw-rg: 400;
+    --fw-md: 500;
+    --fw-sb: 600;
+    --fw-bd: 700;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  /*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+  /*
+    3. Allow percentage-based heights in the application
+  */
+html, body {
+    height: 100%;
+}
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+  /*
+    6. Improve media defaults
+  */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+  /*
+    7. Remove built-in form typography styles
+  */
+input, button, textarea, select {
+    font: inherit;
+}
+  /*
+    8. Avoid text overflows
+  */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* Modifier Class */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+}
+
+.btn {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+  
+    border: 0;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    font-weight: var(--fw-md);
+  }
+
+
+

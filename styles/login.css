@@ -1,0 +1,162 @@
+@import url('../global.css');
+@import "https://unpkg.com/open-props/easings.min.css";
+@import "https://unpkg.com/open-props/animations.min.css";
+
+/* Typography */
+h1 {
+    font-size: 1.25rem;
+    font-weight: var(--fw-bd);
+    color: var(--clr-text-dark);
+    margin-block-end: 1rem;
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: var(--fw-sb);
+    color: var(--clr-text-dark);
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: var(--fw-md);
+    color: var(--clr-text-dark);
+}
+
+p {
+    font-size: 0.925rem;
+    font-weight: var(--fw-rg);
+    color: var(--clr-text-dark);
+}
+
+::placeholder {
+    font-size: 0.9rem;
+    color: var(--clr-text-light);
+    font-weight: var(--fw-rg);
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-link);
+    font-size: 0.925rem;
+    font-weight: var(--fw-md);
+}
+
+/* Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-neutral-200);
+}
+
+.loginCard {
+    width: 90%;
+    padding: 1.5rem 1.5rem;
+    background-color: var(--clr-neutral-100);
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    
+}
+@media (min-width:420px) {
+    .loginCard {
+        width: 400px;
+    }
+}
+/* Form Header */
+.form__header {
+    border-bottom: 1px var(--clr-border) solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__header-title {
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-block-end: 1rem;
+}
+
+.logo-wrapper {
+    gap: 0.8rem;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--clr-neutral-100);
+    background-image: url('../icons/Microsoft_To-Do_icon.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title {
+    color: var(--clr-primary-600);
+    font-size: 2rem;
+}
+
+/* Form Body */
+.form__body {
+    border-bottom: 1px var(--clr-border) solid;
+    padding-block: 1rem;
+}
+
+form {
+    gap: 1rem;
+}
+
+.wrapper {
+    gap: 0.5rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: var(--fw-md);
+    color: var(--clr-text-dark);
+}
+
+input {
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    border: 1px var(--clr-border) solid;
+}
+
+input:focus {
+    outline: 1.5px var(--clr-primary-600) solid;
+    box-shadow: hsla(239, 84%, 67%, 0.2) 0px 8px 24px;
+}
+
+.btn[data-icon="google-icon"]::before {
+    content: "";
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+}
+
+.btn-primary {
+    background-color: var(--clr-primary-600);
+    color: var(--clr-neutral-100);
+    transition: box-shadow 500ms;
+}
+
+.btn-primary:hover {
+    box-shadow: hsla(239, 84%, 67%, 0.4) 0px 8px 24px;
+}
+
+/* Form Footer */
+.form__footer {
+    text-align: center;
+    margin-block-start: 1rem;
+}
+
+.invalid-outline {
+    border: 1px var(--clr-invalid) solid;
+    box-shadow: hsla(0, 72%, 51%, 0.2) 0px 2px 8px 0px;
+    animation: var(--animation-shake-y);
+    animation-timing-function: var(--ease-5);
+    animation-duration: 0.5s;
+}

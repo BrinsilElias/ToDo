@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./styles/todo.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./icons/Microsoft_To-Do_icon.png" type="image/x-icon">
+
+    <!-- Javascript -->
+    <script src="./todo.js" async></script>
+    
+    <title>ToDo</title>
+</head>
+<body>
+    <div class="alert"></div>
+    <nav class="container flex">
+        <div class="logo-wrapper flex">
+            <div class="logo"></div>
+            <h2>ToDo</h2>
+        </div>
+        <div class="btn-wrapperr">
+            <button class="btn signout-btn" data-icon="logout-icon" onclick="location.href='/index.html'">Sign Out</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="todo__header">
+            <h1>Welcome Back,</h1>
+            <p>You've got <span id="counter"></span> tasks comming up.</p>
+        </div>
+  
+        <div id="todo-list" class="todo__list flex">
+            <!-- Todo's -->
+        </div>
+    </div>
+
+    
+</body>
+</html>

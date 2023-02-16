@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./styles/login.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./icons/Microsoft_To-Do_icon.png" type="image/x-icon">
+
+    <!-- Javascript -->
+    <script src="app.js" async></script>
+
+    <title>ToDo</title>
+</head>
+<body>
+    <article class="loginCard">
+        <div class="form__header grid">
+            <div class="logo-wrapper flex">
+                <div class="logo"></div>
+                <h1 class="title">ToDo</h1>
+            </div>
+            <h2 class="form__header-title">Log In</h2>
+        </div>
+        <div class="form__body">
+            <form id='login-form' class="grid">
+                <div id="login-wrapper" class="wrapper grid">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="John Doe">
+                </div>
+                <div class="wrapper grid">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Password">
+                </div>
+                <button class="btn btn-primary" id="login-button" type="submit">Log in</button>
+                <div class="wrapper" style="text-align: center;">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+        <div class="form__footer">
+            <p>Don't have an account?</p>
+            <div>
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
